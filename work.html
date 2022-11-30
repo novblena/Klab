@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<title>KLab</title>
+<head>
+
+    <style>
+    .main_container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Child_container{
+    width: 50%;
+    height: 100%;
+    background-color:  rgb(73, 73, 210);
+    
+}
+.goright{
+    float: right;
+}
+.Child_container1{
+    width: 50%;
+    height: 100%;
+    background-color:#F2F3F5;
+    border-radius: 25px;
+}
+.main_div{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Cicle_div{
+    width: 370px;
+    height: 370px;
+    background-color: blue;
+    border-radius: 50%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+}
+.left_box{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+    box-shadow:
+      0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+.left_div{
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke; 
+    border-radius: 25px;
+}
+.btn > .btn1,.btn2,.btn3{
+    width: 70px;
+    display: inline-block;
+    padding: 5px;
+    transform: translateY(-3px);
+    box-shadow: 2px 1px 3px 2px 
+
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 200px;
+
+}
+
+.btn1{
+    color: blue;
+    background: skyblue;
+    background: transparent;
+    border-color:blue;
+    box-shadow: 5px blue;
+
+}
+.btn2{
+    color: green;
+    background: green;
+    background: transparent;
+    border-color: green;
+    box-shadow: 5px green;
+}
+.btn3{
+    color:  rgb(255, 0, 38);
+    background: red;
+    border-color: red;
+    background: transparent;
+    box-shadow: 5px red;
+}
+.right_div{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.register_div{
+    font-weight: bold;
+    width: 300px;
+    background-color: #EBECF0;
+    margin:0 auto;
+    border-radius: 20px;
+    box-shadow:
+      0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+.register_div h1{
+    text-align: center;
+    font-size: 26px;
+}
+.register_div h5{
+    text-align: center;
+}
+.register_div form{
+    display: flex;
+    flex-direction: column;
+     margin: 0 auto;
+     width: 60%;
+}
+.register_div input{
+    height: 20px;
+}
+button{ 
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 11px;
+}
+
+.register_div label{
+    margin-left: -40px;
+}
+p{
+margin-top:-12px;
+}
+span{
+    font-weight: bolder;
+}
+a{
+    float: right;
+    text-decoration: none;
+    color: lightblue;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px;
+
+}
+    </style>
+    </style>
+</head>
+<body>
+<div class="main_container">
+          <div class="Child_container"> </div>
+          <div class="Child_container1"> </div>
+          <div class="main_div">
+            <div class="left_div">
+                <h1>clever</h1>
+                <footer>
+                    <p>let's see what we have new,check it out so maybe write here something more </p>
+                </footer> 
+
+                <div class="Cicle_div"> </div> 
+                <div class="left_box">
+                    <div class="btn">
+                        <h2>Statostics</h2>
+                        <a href="#">show more</a>
+                        <h1>37</h1>
+                        <button class="btn1">Super</button>
+                        <button class="btn2"> Great</button>
+                        <button class="btn3">Purpose</button>
+                    </div>
+                    <div class="container">
+                        
+                        <aside class="goright">
+                            <img src="clock.jpg" alt="clock">
+                            <h5>Total hours </h5>
+                            <h3>1,240</h3>
+                        </aside>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="right_div">
+            <div class="register_div"> 
+                <h1> Create your account!</h1>
+                <h5>It's free and eazy!</h5>
+                <form>
+                    <label for="fname">Your name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+                    <label for="email">E-mail or phonenumber:</label><br>   
+                    <input type="text" id="email" name="email" placeholder="Type your email or phone number"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password" placeholder="Type your password"><br>
+                     <p><input type="checkbox">by creating an account you must agree <span>terms</span> &nbsp;  and <span>conditions</span>!</p>
+                    <button type="submit">register</button>
+                    <div class="icons">
+                        <h4>or do via other account</h4>
+                        <a href="#"><img src="google.jpg" alt="google"> </a>
+                        <a href="#"><img src="apple1.png" alt="apple"></a>
+                        <a href="#"><img src="face.png" alt="face"></a>
+                    </div>
+                </form>
+            </div>
+            </div>
+          </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>         
+</body>
+</html>
